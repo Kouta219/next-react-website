@@ -1,10 +1,13 @@
-import Layout  from "components/layout"
+import Header from "components/Header/Header"
+import Footer from "components/Footer/Footer"
 
-function Myapp({
-    Component,pageProps}){
-        return(
-            <Layout>
-                <Component {...pageProps}/>
-            </Layout>
-        )
-    }
+export default function Layout({children}){
+    return(
+        <>
+        <Header/>
+        <main>{children}</main>
+        <Footer/>
+        </>
+    )
+}
+
