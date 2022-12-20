@@ -1,3 +1,4 @@
+import Meta from '../components/meta/meta'
 import Container from  "../components/container/container"
 import Hero from  "components/Hero/Hero"
 import PostBody from '../components/post-body/post-body'
@@ -10,6 +11,7 @@ import eyecatch from '../components/images/about.jpg'
 export default function About(){
     return (
         <Container>
+            <Meta pageTitle="アバウト"/>
         <Hero
         title="About"
         subtitle="About development activities"
