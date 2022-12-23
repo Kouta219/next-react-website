@@ -20,5 +20,14 @@ import {client} from '../lib/api'
 export async function getStaticProps(){
     const slug='schdule'
 
-    const 
+    const post=await getByPostSlug(slug)
+        return{
+            props:{
+                title:post.title,
+                publish:post.publisshDate,
+                content:post.content,
+                eyecatch:post.eyecatch,
+                categories:post.categories,
+            },
+        }
 }
